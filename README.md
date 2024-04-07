@@ -10,15 +10,15 @@
 	если pos больше длины списка, то нужно вставить элемент в конец списка.
 	
 # Реализация
-test.h && test.cpp - Класс тестирования. В нём создаются экземпляры класса списка FineGrainedQueue, генератора случайных чисел RandomGen
-FineGrainedQueue.h && FineGrainedQueue.cpp - Класс списка.
-Имеет следующие public методы:
-	FineGrainedQueue(); // конструктор класса. Инициализирует члены класса, выделяет память под mutex списка.
-	~FineGrainedQueue(); // деструктор класса. Использует метод clear для очистки списка и освобождает память выделенную под mutex
-	void push_back(int value); // добавление в конец списка
-	void show(); // Вывод содержимого списка
-	void insertIntoMiddle(int value, int pos); //вставка в середину
-	size_t size(); //аналогично методу size контейнера List в STL возвращает количество элементов в списке
-	void clear(); // очистка списка
-Node.h содержит структуру узла.
+test.h && test.cpp - Класс тестирования. В нём создаются экземпляры класса списка FineGrainedQueue, генератора случайных чисел RandomGen\
+FineGrainedQueue.h && FineGrainedQueue.cpp - Класс списка.\
+Имеет следующие public методы:\
+	FineGrainedQueue(); // конструктор класса. Инициализирует члены класса, выделяет память под mutex списка.\
+	~FineGrainedQueue(); // деструктор класса. Использует метод clear для очистки списка и освобождает память выделенную под mutex\
+	void push_back(int value); // добавление в конец списка\
+	void show(); // Вывод содержимого списка\
+	void insertIntoMiddle(int value, int pos); //вставка в середину\
+	size_t size(); //аналогично методу size контейнера List в STL возвращает количество элементов в списке\
+	void clear(); // очистка списка\
+Node.h содержит структуру узла.\
 randomGen.h - класс генератора случайных чисел. Использует std::random_device и std::mt19937
